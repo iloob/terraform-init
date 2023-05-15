@@ -1,0 +1,11 @@
+version: '3'
+services:
+  terraform:
+    build: .
+    environment:
+      AWS_ACCESS_KEY_ID: 
+      AWS_SECRET_ACCESS_KEY: 
+    volumes:
+      - ./code:/code
+    ports:
+      - 8888
